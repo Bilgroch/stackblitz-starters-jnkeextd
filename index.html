@@ -5,6 +5,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Ajustes adicionales para asegurar que las imágenes se adapten al bloque original */
+      .pbi-img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .group-title {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      /* Estilos para los links: siempre blancos y negrita al pasar el mouse */
+      .link a, .link a:visited {
+        color: white !important;
+        text-decoration: none;
+        transition: font-weight 0.2s ease;
+      }
+
+      .link a:hover {
+        font-weight: bold;
+        color: white !important;
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -19,6 +46,7 @@
     </header>
 
     <main>
+      <!-- Visualizaciones de Google Sheets -->
       <section class="viz-section">
         <h2>Visualizacion 1</h2>
         <div class="chart-container">
@@ -31,21 +59,22 @@
       <section class="viz-section">
         <h2>Visualizacion 2</h2>
         <div class="chart-container">
+          <iframe width="600" height="371" seamless frameborder="0" scrolling="no"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSD80D18jGHyAYfhtxtJbGLCpFmQ31lpumTlYuIAvs7iDt51jH09Sm1k53PFTJ_98q0lmmLFOgIoXEd/pubchart?oid=1324708330&format=interactive">
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Visualizaciones de Datawrapper / StackBlitz -->
+      <section class="viz-section">
+        <h2>Visualizacion 3</h2>
+        <div class="chart-container">
           <iframe title="CO2 Totales vs CO2 Per Cápita" aria-label="Scatter Plot"
             id="datawrapper-chart-7qbJj"
             src="https://datawrapper.dwcdn.net/7qbJj/1/"
             scrolling="no" frameborder="0"
             style="width: 0; min-width: 100% !important; border: none;"
             height="477" data-external="1">
-          </iframe>
-        </div>
-      </section>
-
-      <section class="viz-section">
-        <h2>Visualizacion 3</h2>
-        <div class="chart-container">
-          <iframe width="600" height="371" seamless frameborder="0" scrolling="no"
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSD80D18jGHyAYfhtxtJbGLCpFmQ31lpumTlYuIAvs7iDt51jH09Sm1k53PFTJ_98q0lmmLFOgIoXEd/pubchart?oid=1324708330&format=interactive">
           </iframe>
         </div>
       </section>
@@ -60,6 +89,40 @@
             style="width: 0; min-width: 100% !important; border: none;"
             height="352" data-external="1">
           </iframe>
+        </div>
+      </section>
+
+      <!-- Grupo Nuevo: Graficos de Power BI -->
+      <h2 class="group-title">Graficos de Power BI</h2>
+      
+      <section class="viz-section">
+        <h2>Visualizacion 5</h2>
+        <div class="chart-container">
+          <img src="./Imagenes/AGpi1.png" alt="Gráfico Power BI 1" class="pbi-img">
+        </div>
+      </section>
+
+      <section class="viz-section">
+        <h2>Visualizacion 6</h2>
+        <div class="chart-container">
+          <img src="./Imagenes/AGpi2.png" alt="Gráfico Power BI 2" class="pbi-img">
+        </div>
+      </section>
+
+      <section class="viz-section">
+        <h2>Visualizacion 7</h2>
+        <div class="chart-container">
+          <img src="./Imagenes/AGpi3.png" alt="Gráfico Power BI 3" class="pbi-img">
+        </div>
+      </section>
+
+      <!-- Grupo Nuevo: Graficos de Google Colab -->
+      <h2 class="group-title">Grafico de Google Colab</h2>
+      
+      <section class="viz-section">
+        <h2>Visualizacion 8</h2>
+        <div class="chart-container">
+          <img src="./Imagenes/AG3.png" alt="Gráfico Google Colab" class="pbi-img">
         </div>
       </section>
     </main>
